@@ -44,7 +44,7 @@ async function getData(charactername){
       
       combat_Traits ={}
       combat_Traits_names=["치명","특화","제압","신속","인내","숙련"]
-      for (let index = 0; index < 5; index++) {
+      for (let index = 0; index < 6; index++) {
           temp= dom.window.document.querySelector(`#profile-ability > div.profile-ability-battle > ul > li:nth-child(${index+1}) > span:nth-child(2)`).textContent
           combat_Traits[combat_Traits_names[index]]=temp
       }
