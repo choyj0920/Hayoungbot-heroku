@@ -1,0 +1,28 @@
+{
+  "name": "jscrawling",
+  "version": "0.0.1",
+  "description": "Dynamic web crawling exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choyj0920/jscrawling.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/choyj0920/jscrawling/issues"
+  },
+  "homepage": "https://github.com/choyj0920/jscrawling#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.16.3",
+    "playwright": "^1.16.3"
+  },
+  "dependencies": {
+    "jsdom": "^18.0.1",
+    "nodemon": "^2.0.14"
+  }
+}
