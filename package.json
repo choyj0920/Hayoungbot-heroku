@@ -39,7 +39,6 @@
   },
   "homepage": "https://github.com/choyj0920/HayoungBot#readme",
   "devDependencies": {
-    "@playwright/test": "^1.16.3",
-    "playwright": "^1.16.3"
+    "playwright-chromium":"^1.16.3"
   }
 }
