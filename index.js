@@ -1,6 +1,6 @@
 const { Client, Intents, DiscordAPIError} = require('discord.js');
 const {Collection}=require('discord.js')
-//const { token } = require('./config.json');
+const { token } = require('./config.json');
 const Discord = require('discord.js')
 
 const fs=require('fs')

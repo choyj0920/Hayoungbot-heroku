@@ -42,6 +42,7 @@ typings/
 # Optional npm cache directory
 .npm
 ./config.json
+./localstart.js
 # Optional eslint cache
 .eslintcache
 
@@ -77,3 +78,4 @@ typings/
 config.json
 config.json
 config.json
+localstart.js
