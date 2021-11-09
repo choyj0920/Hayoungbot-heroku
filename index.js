@@ -3,7 +3,8 @@ const {Collection}=require('discord.js')
 const { token } = require('./config.json');
 const Discord = require('discord.js')
 
-const fs=require('fs')
+const fs=require('fs');
+const { default: test } = require('@playwright/test');
 var myIntents =new Intents()
 myIntents.add(Intents.FLAGS.GUILD_PRESENCES, Intents.FLAGS.GUILD_MEMBERS,Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES);
 const client = new Client({ intents:myIntents });
@@ -78,7 +79,16 @@ client.on('interactionCreate', async interaction => {
 
 });
 
+const { chromium } = require("playwright-chromium");
 
+(async () => {
+  const browser = await chromium.launch({ chromiumSandbox: false });
+  const context = await browser.newContext();
+  const page = await context.newPage();
+  await page.goto('http://whatsmyuseragent.org/');
+  await page.screenshot({ path: `chromium.png` });
+  await browser.close();
+})();
 
 
 
