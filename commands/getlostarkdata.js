@@ -5,7 +5,7 @@ const Discord = require('discord.js')
 
 async function getData(charactername){
   for (const browserType of [playwright.chromium]) {
-    const browser = await browserType.launch();
+    const browser = await browserType.launch({ chromiumSandbox: false });
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto(`https://lostark.game.onstove.com/Profile/Character/${charactername}`)
