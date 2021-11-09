@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "17.x"
+  },
   "name": "hayoungbot",
   "version": "0.0.1",
   "description": "하영 봇",
