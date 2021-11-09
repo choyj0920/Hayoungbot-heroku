@@ -1,1 +1,1 @@
-worker:npx playwright test
+worker: npm start
