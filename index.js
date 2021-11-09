@@ -82,5 +82,5 @@ client.on('interactionCreate', async interaction => {
 
 
 
-client.login(token);
+client.login(process.env.TOKEN);
 
