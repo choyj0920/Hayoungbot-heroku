@@ -1,28 +1,40 @@
 {
-  "name": "jscrawling",
+  "name": "hayoungbot",
   "version": "0.0.1",
-  "description": "Dynamic web crawling exercise",
+  "description": "하영 봇",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "YoonJik",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.7.0",
+    "@discordjs/opus": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.6.0",
+    "ansi-regex": "^6.0.1",
+    "discord-api-types": "^0.24.0",
+    "discord.js": "^13.2.0",
+    "events": "^3.3.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.0",
+    "jsdom": "^18.0.1",
+    "libsodium-wrappers": "^0.7.9",
+    "yt-search": "^2.10.2",
+    "ytdl-core": "^4.9.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/choyj0920/jscrawling.git"
+    "url": "git+https://github.com/choyj0920/HayoungBot.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/choyj0920/jscrawling/issues"
+    "url": "https://github.com/choyj0920/HayoungBot/issues"
   },
-  "homepage": "https://github.com/choyj0920/jscrawling#readme",
+  "homepage": "https://github.com/choyj0920/HayoungBot#readme",
   "devDependencies": {
     "@playwright/test": "^1.16.3",
     "playwright": "^1.16.3"
-  },
-  "dependencies": {
-    "jsdom": "^18.0.1",
-    "nodemon": "^2.0.14"
   }
 }
