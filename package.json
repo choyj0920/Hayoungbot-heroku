@@ -1,7 +1,7 @@
 {
   "engines": {
     "node": "17.x",
-    "npm" : "9.1.x"
+    "npm" : "8.1.x"
   },
   "name": "hayoungbot",
   "version": "0.0.1",
